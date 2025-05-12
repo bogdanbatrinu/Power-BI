@@ -1,0 +1,59 @@
+Daily Power BI
+
+📊 Power BI: Listing Customers with Their ID, Names, and Company Name
+
+🔍 Want to display customer details in Power BI? Here’s how you can retrieve and visualize customer data including ID numbers, last names, first names, and company names using Power Query and DAX.
+
+📌 Power Query Approach
+
+If your data is coming from an external source (like SQL, Excel, or CSV), you can clean and structure it in Power Query:
+
+1️⃣ Load the data into Power Query
+ • Click Transform Data in Power BI
+ • Ensure your dataset contains CustomerID, LastName, FirstName, and CompanyName
+
+2️⃣ Transform Columns (if needed)
+ • If you have a FullName column instead of separate FirstName and LastName, split it:
+ • Select the FullName column → Click Split Column → Choose By Delimiter (” “)
+ • Rename the new columns as FirstName and LastName
+
+3️⃣ Close & Load the transformed data into Power BI
+
+📌 DAX Formula Approach
+
+If your table (Customers) contains a FullName column and you need to extract first and last names dynamically, use these DAX measures:
+
+✔ Extract First Name:
+
+FirstName = LEFT(Customers[FullName], FIND(" ", Customers[FullName]) - 1)
+
+✔ Extract Last Name:
+
+LastName = RIGHT(Customers[FullName], LEN(Customers[FullName]) - FIND(" ", Customers[FullName]))
+
+✔ Create a Full Name (if split names exist):
+
+FullName = Customers[FirstName] & " " & Customers[LastName]
+
+📊 Visualizing the Data in Power BI
+
+1️⃣ Insert a Table or Matrix visual
+2️⃣ Drag and drop these fields:
+✅ CustomerID
+✅ LastName
+✅ FirstName
+✅ CompanyName
+3️⃣ Apply filters or slicers for better analysis
+
+📌 Sample Output Table
+
+CustomerID LastName FirstName CompanyName
+101 Doe John Tech Corp
+102 Smith Jane Soft Inc.
+103 Johnson Emily DataWorks
+
+🚀 Key Takeaways
+
+✔ Power Query helps clean & transform data before loading
+✔ DAX functions can dynamically extract & manipulate text fields
+✔ Tables & Matrix visuals make it easy to display customer details
