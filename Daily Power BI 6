@@ -1,0 +1,17 @@
+🔹 Daily Power BI 6: Dataflows for Self-Service Data Prep
+
+Power BI Dataflows is a powerful feature that enables self-service data preparation in the cloud. It allows users to create, manage, and reuse ETL (Extract, Transform, Load) processes across different reports and dashboards—without requiring complex database management.
+
+🛠 Key Features of Dataflows:
+✅ No-Code Data Transformation: Use Power Query (same as Excel & Power BI Desktop) to clean and shape data.
+✅ Centralized Data Storage: Store processed data in Azure Data Lake for easy access across multiple reports.
+✅ Automated Refreshes: Schedule data updates to keep reports up-to-date.
+✅ Reusable Data Entities: Save cleaned data as entities and share them across teams for consistency.
+✅ Supports Large Datasets: Helps scale reporting solutions without overloading Power BI Desktop.
+🔍 When to Use Dataflows?
+🔹 When multiple reports need the same transformed dataset
+🔹 If you want to store data in a centralized, cloud-based location
+🔹 When you need reusable ETL processes without relying on IT
+
+💡 Bonus Tip:
+You can integrate Power BI Dataflows with Azure Synapse Analytics for even more advanced analytics and AI-driven insights!
