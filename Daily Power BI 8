@@ -1,0 +1,47 @@
+📊 Daily Power BI 8 
+
+Date Filtering & Slicers
+
+Power BI makes it effortless to analyze time-based data using date filtering and slicers. Whether tracking modifications, sales trends, or historical changes, Power BI offers powerful date-based filtering capabilities.
+
+🕵️ Why Use Date Filters in Power BI?
+✅ Track changes over time (e.g., modified records, trends, etc.)
+✅ Compare time periods (e.g., last month vs. this month)
+✅ Analyze seasonal trends in sales, performance, or any KPI
+✅ Automate dashboards by dynamically updating them based on current dates
+
+🔹 How to Use Date Filters in Power BI
+
+Power BI provides multiple ways to filter by date:
+1️⃣ Using the Filter Pane
+📌 Steps:
+1️⃣ Open your report in Power BI Desktop
+2️⃣ Select a visualization
+3️⃣ In the Filters pane, drag a date field to the filter area
+4️⃣ Choose a condition like:
+After a specific date (ModifiedDate > '2000-12-29')
+Between two dates
+Relative filtering (Last 7 days, Last 3 months, etc.)
+Adding a Date Slicer
+📌 Steps:
+1️⃣ Drag a date column into the report canvas
+2️⃣ Select Slicer from the Visualizations pane
+3️⃣ Use the slicer to dynamically filter your reports
+
+📌 Bonus: Enable relative date filtering to always show data from the last week, month, or year automatically!
+
+💡 Use Case: Modified Data Analysis
+Imagine tracking customer record changes in Power BI using a date slicer. Simply link the ModifiedDate field from your database and filter updates after December 29, 2000—just like in SQL!
+
+🔹 SQL Query for Power BI Data Source:
+
+SELECT BusinessEntityID, FirstName, LastName, ModifiedDate 
+FROM Person.Person 
+WHERE ModifiedDate > '2000-12-29'
+
+Once connected in Power BI, use date filters and slicers to analyze updates dynamically.
+🚀 Pro Tip: Combine Date Filtering with Time Intelligence Functions
+Pair date filters with Power BI's built-in Time Intelligence functions like:
+✔️ TOTALYTD() – Year-to-date calculations
+✔️ PREVIOUSMONTH() – Compare last month's data
+✔️ DATEADD() – Shift between time periods
