@@ -1,0 +1,29 @@
+Daily Power BI 7
+
+Using Report-Level Filters for Precise Data Control 🚀
+
+In Power BI, filtering data is essential to ensure your reports display the most relevant insights. Just like how SQL's WHERE clause filters records, Power BI provides Report-Level Filters, allowing you to apply filters across an entire report without modifying the underlying dataset.
+
+🔹 What are Report-Level Filters?
+A Report-Level Filter in Power BI applies to all pages and visuals in your report. Unlike page or visual-level filters, this ensures consistency across the entire report, making it useful for scenarios where certain data should always be excluded or highlighted.
+
+🔹 How to Apply a Report-Level Filter
+✅ Step 1: Open Power BI Desktop
+✅ Step 2: Go to the Filters Pane (on the right)
+✅ Step 3: Drag the column you want to filter into the Filters on this report section
+✅ Step 4: Choose the values you want to include or exclude
+✅ Step 5: Apply and save your report
+
+For example, if you need to exclude employees with the job title "Research and Development Engineer", you can:
+Drag the Job Title column into the report-level filter section
+Unselect "Research and Development Engineer"
+Click Apply
+
+This ensures that no page or visual in your report displays data related to that job title, similar to using WHERE JobTitle <> 'Research and Development Engineer' in SQL.
+
+🔹 When to Use Report-Level Filters?
+✔️ When you need global filtering across all report pages
+✔️ When you want to ensure certain data never appears in any visual
+✔️ When working with sensitive or unnecessary data that should always be excluded
+
+Using Report-Level Filters helps maintain data consistency, improve report performance, and ensure users see only the most relevant insights.
