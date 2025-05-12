@@ -1,0 +1,33 @@
+🔍 Daily Power BI 5: Filtering Data with SQL Queries in Power BI
+Power BI allows seamless integration with SQL databases, enabling users to import, transform, and visualize their data efficiently. One of the most powerful ways to filter and refine data before bringing it into Power BI is by leveraging the WHERE clause in SQL queries.
+
+🚀 Why Use SQL Queries in Power BI?
+✅ Optimize Performance – Reduce the volume of data imported into Power BI by filtering records at the source.
+✅ Enhance Data Accuracy – Ensure only relevant data is pulled, avoiding unnecessary processing.
+✅ Create Custom Views – Transform raw data before it even reaches Power BI for visualization.
+✅ Reduce Load on Power Query – Pre-filtering data in SQL minimizes transformation steps within Power BI.
+
+🔗 How to Use SQL Queries in Power BI
+Power BI enables users to connect to SQL Server databases using DirectQuery or Import Mode. When connecting:
+1️⃣ Navigate to Get Data → SQL Server Database
+2️⃣ Enter the server name and database
+3️⃣ Click Advanced Options and enter your SQL Query
+4️⃣ Load the data into Power BI
+
+📝 Example Use Case: Filtering Employee Data
+If you need to retrieve only employees with the middle name "J", instead of importing the entire Person.Person table, use the following query before loading the data into Power BI:
+
+SELECT BusinessEntityID, FirstName, MiddleName, LastName 
+FROM Person.Person 
+WHERE MiddleName = 'J';
+🔍 Power BI Features That Work with SQL-Filtered Data
+🔹 Power Query Editor – Further transform your SQL-filtered data using M language.
+🔹 DAX Measures – Perform additional calculations on imported datasets.
+🔹 Data Modeling – Define relationships between SQL tables and other data sources.
+🔹 Scheduled Refresh – Keep filtered SQL data up-to-date automatically.
+🔹 Row-Level Security (RLS) – Apply SQL-based filtering for user-specific data access.
+💡 Why Pre-Filtering in SQL is a Game-Changer
+📌 Speeds Up Power BI Reports – Smaller datasets load faster and improve dashboard performance.
+📌 Reduces Data Storage – Prevents unnecessary data from clogging Power BI’s memory.
+📌 Enhances Query Efficiency – SQL filters data before it enters Power BI, reducing the need for complex DAX calculations.
+By combining SQL filtering (WHERE clause) with Power BI’s visualization power, you ensure cleaner, faster, and more efficient dashboards! 🚀
