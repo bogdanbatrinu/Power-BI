@@ -1,0 +1,26 @@
+Daily Power BI 3
+
+Report Page Tooltips in Power BI
+
+This allows you to create detailed, interactive tooltips that display additional insights without cluttering your main report canvas. By designing a dedicated tooltip page, you can provide users with contextual information and deeper analysis upon hovering over data points. This approach not only enriches the user experience but also maintains a clean and organized report layout. 
+
+Steps to Implement Report Page Tooltips
+
+Create a Tooltip Page:
+In Power BI Desktop, add a new page to your report.
+Navigate to the "Format" pane, select "Page Information," and toggle on the "Tooltip" option.
+Set the page size appropriately under "Canvas settings" to ensure it fits as a tooltip.
+
+Design the Tooltip:
+
+Add visuals and information that provide context or additional details relevant to the main report.
+Ensure the visuals are concise and enhance the user's understanding of the data point they are hovering over.
+
+Assign the Tooltip to a Visual:
+
+Return to your main report page.
+Select the visual where you want to implement the tooltip.
+In the "Format" pane, expand the "Tooltip" section.
+Set the "Type" to "Report page" and choose your newly created tooltip page from the dropdown menu.
+
+By following these steps, you can create dynamic tooltips that enhance data interactivity and provide users with a richer analytical experience. 
