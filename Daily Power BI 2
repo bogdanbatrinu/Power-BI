@@ -1,0 +1,50 @@
+📊 Daily Power BI 2: Creating a Product List Table
+
+Today’s Power BI exercise focuses on listing product details using Power Query and DAX.
+
+🔹 Using Power Query to Load Product Data
+
+If you have a dataset with product details (e.g., Products table), follow these steps to import and transform it:
+
+1️⃣ Open Power BI Desktop
+2️⃣ Click on “Transform Data” to open Power Query Editor
+3️⃣ Select your data source (Excel, SQL Server, CSV, etc.)
+4️⃣ Filter the columns you need:
+ • Product Name
+ • Product Number
+ • Color
+
+5️⃣ Click “Close & Apply” to load the data into Power BI
+
+🔹 Creating a Table Visual for Product Details
+
+Once the data is loaded, create a table visualization to display product details:
+
+1️⃣ Go to Report View
+2️⃣ Click on Table Visual
+3️⃣ Drag and drop:
+ • Product Name
+ • Product Number
+ • Color
+
+🎨 Enhance your table:
+✅ Format columns with colors & alignment
+✅ Use conditional formatting to highlight products with missing colors
+
+🔹 DAX Formula for Custom Product Categories
+
+Want to classify products based on color availability? Use this DAX formula:
+
+ProductCategory = 
+IF(
+ ISBLANK(Products[Color]), 
+ "Uncategorized", 
+ "Classified"
+)
+
+🔹 Add this column to the table visual to see categorized products!
+
+💡 Pro Tip:
+
+📌 Use Filters & Slicers to explore product data interactively.
+📌 Apply Data Bars to visually highlight product numbers in your table.
