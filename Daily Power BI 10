@@ -1,0 +1,19 @@
+Daily Power BI 10
+
+In today’s Power BI post, we’re focusing on date filtering—a key feature that helps you ensure your visualizations reflect only the data you want to analyze. Building on our recent SQL post about filtering out rows modified on December 29, 2000, Power BI allows you to seamlessly implement similar filters in your reports.
+
+What You Can Do:
+
+Data Cleaning in Query Editor:
+When you import your dataset into Power BI, open the Query Editor and select the ModifiedDate column. Apply a filter to exclude records with the date December 29, 2000. This ensures that your data model only contains records that meet your criteria.
+
+Using the Filter Pane:
+You can also leverage the built-in Filter Pane in Power BI Desktop to dynamically control which data appears in your visuals. Simply add a filter on ModifiedDate and set it to “is not equal to December 29, 2000.”
+
+Why It Matters:
+
+Enhanced Data Accuracy: By excluding specific dates, you ensure that your analysis reflects ongoing trends without interference from outlier data.
+
+Consistency Across Tools: Align your Power BI reports with the filtering logic in your SQL backend, creating a smooth, end-to-end data pipeline.
+
+Improved Reporting: Tailor your dashboards to focus on relevant data, making your insights more actionable.
